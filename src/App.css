@@ -1,0 +1,13 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+body {
+  display: initial; /* Reset display property */
+  margin: 0; 
+  background-color: black;/* Remove default margin */
+}
+h1, h2, h3, p, ul, li {
+  all: unset; /* Unsets all default browser styles */
+}

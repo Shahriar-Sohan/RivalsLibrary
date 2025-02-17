@@ -1,0 +1,39 @@
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 0px #fff;
+    }
+
+    50% {
+        text-shadow: 0 0 20px rgb(1, 199, 199);
+    }
+
+    100% {
+        text-shadow: 0 0 0px #fff;
+    }
+}
+
+@font-face {
+    font-family: 'Audiowide';
+    
+    src: url('./assets/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+    
+    font-weight: normal;
+    
+    font-style: normal;
+}
+
+.glowing-text {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+    font-family: 'Audiowide';
+    text-shadow: 0 0 10px cyan;
+    animation: glow 3s infinite;
+}
+
+.para {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family: 'Audiowide'
+}

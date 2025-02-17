@@ -1,0 +1,16 @@
+.distortion-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Ensure the distortion container is interactive */
+    pointer-events: auto; /* Allow mouse events to interact with the distortion */
+}
+
+.distortion-content {
+    position: relative;
+    z-index: 1;
+    pointer-events: auto; /* Allow interaction with the content */
+}
