@@ -1,0 +1,24 @@
+.div {
+    border: 2px solid white;
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    box-shadow: 0 0px 20px 2px rgb(250, 247, 247);
+    animation: MoveIn 1s ease-in-out 1 ;
+    will-change: transform,opacity;
+  }
+
+  @keyframes MoveIn {
+    0% {
+        opacity: 1; 
+        transform: translateX(-200px) scale(0.1); 
+        clip-path: circle(50% at 50% 50%);
+      }
+      100% {
+        opacity: 1; 
+        transform: translateX(0) scale(1);
+        clip-path: inset(0 0 0 0 round 40px);
+      }
+  }

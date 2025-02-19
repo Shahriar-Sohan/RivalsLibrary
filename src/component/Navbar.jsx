@@ -13,7 +13,7 @@ function Navbar() {
             alignItems: "center",
             width: '90vw',
             height: '100px',
-            position: 'absolute', /* Position the Navbar absolutely */
+            position: 'fixed', /* Position the Navbar absolutely */
             top: 0,
             left: 0,
             zIndex: 3, /* Ensure the Navbar is above the distortion */
