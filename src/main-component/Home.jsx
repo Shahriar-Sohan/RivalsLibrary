@@ -13,7 +13,7 @@ import "./divMotion.css"
 
 
 function Home() {
-  
+
 
 
 
@@ -40,7 +40,11 @@ function Home() {
 
 
         <Navbar style={{ position: 'absolute', zIndex: 1000 }} />
-        <img src={Eye} style={{zIndex: 2000 , position: 'absolute', left: '72.5vw', top: '21.7vh', width: '8.5vw', backgroundColor: 'rgb(0, 0, 29)'}}  />
+        <img src={Eye} style={{
+          zIndex: 2000, position: 'absolute', left: '72.5vw',
+          top: '21.7vh', width: '8.5vw', backgroundColor: 'rgb(0, 0, 29)',
+          filter: " brightness(1.1) contrast(1.2) saturate(0.9) hue-rotate(-30deg) drop-shadow(0 0 0 rgba(200, 220, 255, 0.5)"
+        }} />
 
         <div>
           <AnimatedContent
@@ -84,13 +88,6 @@ function Home() {
 
         </section>
       </div>
-
-
-
-
-
-
-
     </div>
   );
 }

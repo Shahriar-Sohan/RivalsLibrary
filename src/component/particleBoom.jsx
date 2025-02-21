@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 
 function ParticleBoom({children}){
@@ -17,14 +17,10 @@ function ParticleBoom({children}){
     const duration2 = 100
 
     const startPosX = -1000
-    const startBorderRadius = 50
-    const startBgColor = "white"
     const startHeight = 1
     const startWidth = 1
 
     const endPosX = 0
-    const endBorderRadius = 40
-    const endBgColor = "rgb(13, 8, 27)"
     const endHeight = 50
     const endWidth = 80
 
