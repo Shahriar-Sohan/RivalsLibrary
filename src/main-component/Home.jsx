@@ -1,43 +1,19 @@
-import React, { useRef, use } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Navbar from "../component/Navbar";
 import soloLeveling from '../assets/soloLeveling.jpeg';
 import audioFont from '../assets/fonts/Audiowide/Audiowide-Regular.ttf';
+import Eye from '../assets/ffe03fa12ec9 (1).webp'
 
 import GridDistortion from "../component/gridDistortion/gridDistortion";
 import GlitchText from '../component/glitchText/GlicthEffectText';
 import AnimatedContent from '../component/animatedContent/AnimatedContent'
+import ParticleBoom from "../component/particleBoom";
 
 import "./divMotion.css"
 
+
 function Home() {
-  const Styles = {
-    para: {
-
-    }
-  };
-
-  // const elementRef = useRef(null)
-  // const element = elementRef.current
-
-  // const startPosX = -200
-  // const startBorderRadius= 50
-  // const startBgColor = "white"
-  // const startHeight = "10px"
-  // const startWidth = '10px'
-
-  // const endPosX = 0
-  // const endBorderRadius = 40
-  // const endBgColor= "rgb(13, 8, 27)"
-  // const endHeight = '50vh'
-  // const endWidth = '80vw'
-
-  // function Animation(){
-  //   element.style.transform = `transform: translateX(${endPosX - startPosX });`
-  //   element.style.
-  // }
-
-
-
+  
 
 
 
@@ -50,7 +26,7 @@ function Home() {
             font-family: 'Audiowide';
             src: url(${audioFont}) format('truetype');
             } `}
-       </style>
+      </style>
 
       <div style={{ width: '100vw', height: '100vh', display: "flex", alignItems: "center", }} >
         <GridDistortion
@@ -64,7 +40,7 @@ function Home() {
 
 
         <Navbar style={{ position: 'absolute', zIndex: 1000 }} />
-
+        <img src={Eye} style={{zIndex: 2000 , position: 'absolute', left: '72.5vw', top: '21.7vh', width: '8.5vw', backgroundColor: 'rgb(0, 0, 29)'}}  />
 
         <div>
           <AnimatedContent
@@ -100,11 +76,11 @@ function Home() {
         <section style={{
           height: '80vh', width: '100vw', backgroundColor: 'rgb(13, 8, 27)', padding: 0, display: 'flex',
           justifyContent: 'center', alignItems: 'center'
-          }}>
+        }}>
 
-            <div style={{
-              border: '2px solid white', width: '80vw', height: '50vh', display: 'flex',
-              borderRadius: '40px', boxShadow: '0 0px 20px 2px rgb(250, 247, 247)'}}></div>
+          <ParticleBoom>
+            
+          </ParticleBoom>
 
         </section>
       </div>
