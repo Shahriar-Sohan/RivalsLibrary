@@ -8,6 +8,7 @@ import GridDistortion from "../component/gridDistortion/gridDistortion";
 import GlitchText from '../component/glitchText/GlicthEffectText';
 import AnimatedContent from '../component/animatedContent/AnimatedContent'
 import ParticleBoom from "../component/particleBoom";
+import TechStack from "../component/TechStack";
 
 import "./divMotion.css"
 
@@ -83,7 +84,7 @@ function Home() {
         }}>
 
           <ParticleBoom>
-            
+            <TechStack />
           </ParticleBoom>
 
         </section>

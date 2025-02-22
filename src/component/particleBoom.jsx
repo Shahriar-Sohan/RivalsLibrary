@@ -6,7 +6,6 @@ function ParticleBoom({children}){
 
   useEffect(() => {
     if (elementRef) main(elementRef.current)
-
   }, [])
 
   function main(element) {
@@ -59,7 +58,6 @@ function ParticleBoom({children}){
         element.style.border = '2px solid white'
         if (progress < 1) {
           requestAnimationFrame(step)
-          console.log(progress)
         }
       }
       requestAnimationFrame(step)
